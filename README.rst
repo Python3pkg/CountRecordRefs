@@ -28,7 +28,7 @@ and can be installed using git:
     $ python setup.py install
 
 You may consider installing ``CountRecordRefs`` and its required
-package ``PyMySQL``` within a virtual environment in order to avoid 
+package ``PyMySQL`` within a virtual environment in order to avoid 
 cluttering your system's Python path. See for example the 
 environment management system  `conda <http://conda.pydata.org>`_ 
 or the package `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
