@@ -14,7 +14,7 @@ setup(
         'that refer to a database table in MySQL.'),
     long_description=open(
         join(dirname(__file__), 'README.rst'), encoding='utf-8').read(),
-    py_modules=['CountRecordRefs'],
+    py_modules=['count_record_refs'],
     install_requires=['pymysql'],
     entry_points={
         'console_scripts': [
