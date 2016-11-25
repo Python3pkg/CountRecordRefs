@@ -24,7 +24,7 @@ and can be installed using git:
 .. code-block::
 
     $ git clone https://github.com/jmenglund/CountRecordRefs.git
-    $ cd predsim
+    $ cd CountRecordRefs
     $ python setup.py install
 
 You may consider installing ``CountRecordRefs`` within
