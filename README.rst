@@ -27,11 +27,11 @@ and can be installed using git:
     $ cd CountRecordRefs
     $ python setup.py install
 
-You may consider installing ``CountRecordRefs`` within
-a virtual environment in order to avoid cluttering your system's 
-Python path. See for example the environment management system 
-`conda <http://conda.pydata.org>`_ or the package 
-`virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
+You may consider installing ``CountRecordRefs`` and its required
+package ``PyMySQL``` within a virtual environment in order to avoid 
+cluttering your system's Python path. See for example the 
+environment management system  `conda <http://conda.pydata.org>`_ 
+or the package `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
 
 
 Usage
