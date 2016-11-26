@@ -75,25 +75,24 @@ def parse_args(args):
         '-V', '--version', action='version',
         version='CountRecordRefs.py ' + __version__)
     parser.add_argument(
-        '--user', type=str, action='store', default=None,
-        dest='user', help='MySQL user')
+        '--user', type=str, action='store', default='root',
+        dest='user', help='MySQL user (default: "root")')
     parser.add_argument(
         '--password', type=str, action='store', default=None,
         dest='password', help='MySQL password')
     parser.add_argument(
         '--host', type=str, action='store', default='localhost',
-        dest='host', help='database host')
-    parser.add_argument(
-        '--database', type=str, action='store', required=True,
-        dest='database', help='database name')
+        dest='host', help='database host (default: "localhost")')
     parser.add_argument(
         '-z', '--zero-counts', action='store_true',
         dest='zero_counts', help='include zero-counts in output')
     parser.add_argument(
+        'database_name', type=str, action='store', help='MySQL database name')
+    parser.add_argument(
         'table_name', type=str, action='store',
         help='table name')
     parser.add_argument(
-        'id', type=int, action='store', help='ID-value to look up')
+        'id', type=str, action='store', help='Primary key value to look up')
     return parser.parse_args(args)
 
 
@@ -111,14 +110,14 @@ def main(args=None):
         user=parser.user,
         host=parser.host,
         password=password,
-        db=parser.database,
+        db=parser.database_name,
         table_name=parser.table_name)
 
     print_ref_counts(
         user=parser.user,
         host=parser.host,
         password=password,
-        db=parser.database,
+        db=parser.database_name,
         related_columns=related_columns,
         lookup_id=parser.id,
         zero_counts=parser.zero_counts)

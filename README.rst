@@ -41,23 +41,23 @@ Usage
     
     $ CountRecordRefs.py --help
     usage: CountRecordRefs.py [-h] [-V] [--user USER] [--password PASSWORD]
-                              [--host HOST] --database DATABASE [-z]
-                              table_name id
-
-    Command-line utility for counting records that refer to a database 
-    table in MySQL. Output is written to <stdout>.
-
+                              [--host HOST] [-z]
+                              database_name table_name id
+    
+    Command-line utility for counting records that refer to a database table in
+    MySQL. Output is written to <stdout>.
+    
     positional arguments:
+      database_name        MySQL database name
       table_name           table name
-      id                   ID-value to look up
-
+      id                   Primary key value to look up
+    
     optional arguments:
       -h, --help           show this help message and exit
       -V, --version        show program's version number and exit
-      --user USER          MySQL user
+      --user USER          MySQL user (default: "root")
       --password PASSWORD  MySQL password
-      --host HOST          database host
-      --database DATABASE  database name
+      --host HOST          database host (default: "localhost")
       -z, --zero-counts    include zero-counts in output
 
 
