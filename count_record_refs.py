@@ -14,7 +14,7 @@ import sys
 
 __author__ = 'Markus Englund'
 __license__ = 'GNU GPLv3'
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 
 
 def get_related_columns(user, host, password, db, table_name):
