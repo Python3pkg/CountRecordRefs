@@ -4,7 +4,8 @@ CountRecordRefs.py
 |License|
 
 ``CountRecordRefs.py`` is a command-line tool for counting
-records that refer to a database table in MySQL.
+records that refer to a database table in MySQL. The program
+outputs the number of records for each foreign key.
 
 Source repository: `<https://github.com/jmenglund/CountRecordRefs>`_
 
