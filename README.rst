@@ -45,7 +45,7 @@ Usage
                               table_name id
 
     Command-line utility for counting records that refer to a database 
-    table in MySQL.
+    table in MySQL. Output is written to <stdout>.
 
     positional arguments:
       table_name           table name

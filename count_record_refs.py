@@ -69,7 +69,8 @@ def parse_args(args):
     parser = argparse.ArgumentParser(
         description=(
             'Command-line utility for counting records '
-            'that refer to a database table in MySQL.'))
+            'that refer to a database table in MySQL. '
+            'Output is written to <stdout>.'))
     parser.add_argument(
         '-V', '--version', action='version',
         version='CountRecordRefs.py ' + __version__)
