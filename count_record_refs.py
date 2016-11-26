@@ -36,7 +36,7 @@ def get_related_columns(user, host, password, db, table_name):
     return(related_columns)
 
 
-def get_used_columns(
+def print_ref_counts(
         user, host, password, db, related_columns,
         lookup_id, zero_counts=False):
     if related_columns is None:
@@ -113,7 +113,7 @@ def main(args=None):
         db=parser.database,
         table_name=parser.table_name)
 
-    get_used_columns(
+    print_ref_counts(
         user=parser.user,
         host=parser.host,
         password=password,
