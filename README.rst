@@ -12,8 +12,18 @@ Source repository: `<https://github.com/jmenglund/CountRecordRefs>`_
 --------------------------------
 
 .. contents:: Table of contents
-   :backlinks: top
+   :depth: 2
+   :backlinks: none
    :local:
+
+
+Prerequisites
+-------------
+
+Apart from `MySQL <https://www.mysql.com>`_ itself, you only need 
+to have the python package `PyMySQL <https://github.com/PyMySQL/PyMySQL>`_ 
+installed. If you install ``CountRecordRefs.py`` as described below,
+PyMySQL will be installed automatically for you.
 
 
 Installation
@@ -33,6 +43,9 @@ environment in order to avoid cluttering your system's Python path.
 See for example the environment management system  
 `conda <http://conda.pydata.org>`_ or the package 
 `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
+
+The project is basically a self-contained single-module (single-file) 
+executable script that also can be used as such.
 
 
 Usage
