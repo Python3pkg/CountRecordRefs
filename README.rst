@@ -22,8 +22,8 @@ Prerequisites
 
 Apart from `MySQL <https://www.mysql.com>`_ itself, you only need 
 to have the python package `PyMySQL <https://github.com/PyMySQL/PyMySQL>`_ 
-installed. If you install ``CountRecordRefs`` as described below,
-PyMySQL will be installed automatically for you.
+installed. If you install ``CountRecordRefs`` following the instructions
+below, PyMySQL will be installed automatically for you.
 
 
 Installation
