@@ -92,7 +92,7 @@ def parse_args(args):
         'table_name', type=str, action='store',
         help='table name')
     parser.add_argument(
-        'id', type=str, action='store', help='Primary key value to look up')
+        'id', type=str, action='store', help='primary key value to look up')
     return parser.parse_args(args)
 
 

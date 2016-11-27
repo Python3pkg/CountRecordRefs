@@ -5,7 +5,7 @@ CountRecordRefs.py
 
 ``CountRecordRefs.py`` is a command-line tool for counting
 records that refer to a database table in MySQL. The program
-outputs the number of records for each foreign key.
+outputs the number of records for each foreign key column.
 
 Source repository: `<https://github.com/jmenglund/CountRecordRefs>`_
 
@@ -28,7 +28,8 @@ and can be installed using git:
     $ cd CountRecordRefs
     $ python setup.py install
 
-You may consider installing ``CountRecordRefs`` within a virtual environment in order to avoid cluttering your system's Python path. 
+You may consider installing ``CountRecordRefs`` within a virtual 
+environment in order to avoid cluttering your system's Python path. 
 See for example the environment management system  
 `conda <http://conda.pydata.org>`_ or the package 
 `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
