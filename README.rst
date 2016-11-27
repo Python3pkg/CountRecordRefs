@@ -51,7 +51,7 @@ Usage
     positional arguments:
       database_name        MySQL database name
       table_name           table name
-      id                   Primary key value to look up
+      id                   primary key value to look up
     
     optional arguments:
       -h, --help           show this help message and exit
