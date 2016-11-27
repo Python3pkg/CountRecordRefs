@@ -45,7 +45,7 @@ See for example the environment management system
 `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
 
 This project is basically a self-contained single-module (single-file) 
-executable script that also can be used as such.
+executable script that also can be called as such.
 
 
 Usage
