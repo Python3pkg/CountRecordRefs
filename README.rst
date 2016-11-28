@@ -52,14 +52,13 @@ Usage
 -----
 
 .. code-block::
-    
-    $ CountRecordRefs.py --help
+
     usage: CountRecordRefs.py [-h] [-V] [--user USER] [--password PASSWORD]
                               [--host HOST] [-z]
                               database_name table_name id
     
-    Command-line utility for counting records that refer to a database table in
-    MySQL. Output is written to <stdout>.
+    Command-line utility for counting related records in a MySQL database. Output
+    is written to <stdout>.
     
     positional arguments:
       database_name        MySQL database name
