@@ -3,9 +3,9 @@ CountRecordRefs
 
 |License|
 
-``CountRecordRefs`` is a command-line tool for counting
-records that refer to a database table in MySQL. The program
-outputs the number of records for each foreign key column.
+``CountRecordRefs`` is a command-line tool for counting 
+related records in a MySQL database. The program outputs 
+the number of records for each foreign key column.
 
 The code is written in Python and should work with both
 Python 2 and 3.
@@ -48,7 +48,7 @@ See for example the environment management system
 `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
 
 This project is centered around a self-contained single-module
-(single-file) executable script that also can be used as such.
+(single-file) executable script that can also be used as such.
 
 
 Usage
@@ -74,8 +74,7 @@ Usage
       --user USER          MySQL user (default: "root")
       --password PASSWORD  MySQL password
       --host HOST          database host (default: "localhost")
-      -z, --zero-counts    include zero-counts in output
-
+      -z, --zero-counts    include counts of zero in output
 
 License
 -------
