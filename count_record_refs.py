@@ -50,7 +50,7 @@ def print_ref_counts(
             for row in related_columns:
                 sql = """SELECT {column_name}
                       FROM {table_name}
-                          WHERE {column_name} = '{lookup_id}'
+                      WHERE {column_name} = '{lookup_id}'
                       """.format(
                           table_name=row['TABLE_NAME'],
                           column_name=row['COLUMN_NAME'],
