@@ -6,10 +6,12 @@ Count related records in MySQL.
 """
 
 from __future__ import print_function
+
 import argparse
 import getpass
-import pymysql.cursors
 import sys
+
+import pymysql.cursors
 
 
 __author__ = 'Markus Englund'
