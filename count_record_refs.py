@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Count related records in MySQL.
+Count related records in a MySQL database.
 """
 
 import argparse
