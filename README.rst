@@ -7,6 +7,9 @@ CountRecordRefs
 records that refer to a database table in MySQL. The program
 outputs the number of records for each foreign key column.
 
+``CountRecordRefs`` is written in Python and should work with both
+Python 2 and 3.
+
 Source repository: `<https://github.com/jmenglund/CountRecordRefs>`_
 
 --------------------------------
@@ -21,7 +24,7 @@ Prerequisites
 -------------
 
 Apart from `MySQL <https://www.mysql.com>`_ itself, you only need 
-to have the python package `PyMySQL <https://github.com/PyMySQL/PyMySQL>`_ 
+to have the Python package `PyMySQL <https://github.com/PyMySQL/PyMySQL>`_ 
 installed. If you install ``CountRecordRefs`` following the instructions
 below, PyMySQL will be installed automatically for you.
 
@@ -44,22 +47,21 @@ See for example the environment management system
 `conda <http://conda.pydata.org>`_ or the package 
 `virtualenv <https://virtualenv.pypa.io/en/latest/>`_.
 
-This project is basically a self-contained single-module (single-file) 
-executable script that also can be called as such.
+This project is centered around a self-contained single-module
+(single-file) executable script that also can be used as such.
 
 
 Usage
 -----
 
 .. code-block::
-    
-    $ CountRecordRefs.py --help
+
     usage: CountRecordRefs.py [-h] [-V] [--user USER] [--password PASSWORD]
                               [--host HOST] [-z]
                               database_name table_name id
     
-    Command-line utility for counting records that refer to a database table in
-    MySQL. Output is written to <stdout>.
+    Command-line utility for counting related records in a MySQL database. Output
+    is written to <stdout>.
     
     positional arguments:
       database_name        MySQL database name

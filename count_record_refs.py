@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Count all records that refer to a database table in MySQL.
+Count related records in MySQL.
 """
 
 from __future__ import print_function
@@ -68,8 +68,8 @@ def print_ref_counts(
 def parse_args(args):
     parser = argparse.ArgumentParser(
         description=(
-            'Command-line utility for counting records '
-            'that refer to a database table in MySQL. '
+            'Command-line utility for counting  '
+            'related records in a MySQL database. '
             'Output is written to <stdout>.'))
     parser.add_argument(
         '-V', '--version', action='version',
