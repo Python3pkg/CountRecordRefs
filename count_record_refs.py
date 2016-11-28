@@ -85,7 +85,7 @@ def parse_args(args):
         dest='host', help='database host (default: "localhost")')
     parser.add_argument(
         '-z', '--zero-counts', action='store_true',
-        dest='zero_counts', help='include zero-counts in output')
+        dest='zero_counts', help='include counts of zero in output')
     parser.add_argument(
         'database_name', type=str, action='store', help='MySQL database name')
     parser.add_argument(
