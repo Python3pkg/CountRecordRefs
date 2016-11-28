@@ -5,8 +5,6 @@
 Count related records in MySQL.
 """
 
-from __future__ import print_function
-
 import argparse
 import getpass
 import sys
@@ -46,7 +44,7 @@ def print_ref_counts(
     connection = pymysql.connect(
         host=host, user=user, password=password, db=db,
         cursorclass=pymysql.cursors.DictCursor)
-    print('table_name\tcolumn_name\tcount')
+    sys.stdout.write('table_name\tcolumn_name\tcount\n')
     try:
         with connection.cursor() as cursor:
             for row in related_columns:
@@ -59,10 +57,10 @@ def print_ref_counts(
                           lookup_id=lookup_id)
                 cnt = cursor.execute(sql)
                 if (zero_counts and cnt == 0) or cnt > 0:
-                    print(
+                    sys.stdout.write(
                         row['TABLE_NAME'] + '\t' +
                         row['COLUMN_NAME'] + '\t' +
-                        str(cnt))
+                        str(cnt) + '\n')
     finally:
         connection.close()
 
@@ -104,7 +102,7 @@ def main(args=None):
     parser = parse_args(args)
 
     if not parser.password:
-        password = getpass.getpass('Password:')
+        password = getpass.getpass('MySQL password:')
     else:
         password = parser.password
 
