@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 """
-Count related records in MySQL.
+Count related records in a MySQL database.
 """
 
-from __future__ import print_function
 import argparse
 import getpass
-import pymysql.cursors
 import sys
+
+import pymysql.cursors
 
 
 __author__ = 'Markus Englund'
@@ -44,23 +44,23 @@ def print_ref_counts(
     connection = pymysql.connect(
         host=host, user=user, password=password, db=db,
         cursorclass=pymysql.cursors.DictCursor)
-    print('table_name\tcolumn_name\tcount')
+    sys.stdout.write('table_name\tcolumn_name\tcount\n')
     try:
         with connection.cursor() as cursor:
             for row in related_columns:
                 sql = """SELECT {column_name}
                       FROM {table_name}
-                          WHERE {column_name} = '{lookup_id}'
+                      WHERE {column_name} = '{lookup_id}'
                       """.format(
                           table_name=row['TABLE_NAME'],
                           column_name=row['COLUMN_NAME'],
                           lookup_id=lookup_id)
                 cnt = cursor.execute(sql)
                 if (zero_counts and cnt == 0) or cnt > 0:
-                    print(
+                    sys.stdout.write(
                         row['TABLE_NAME'] + '\t' +
                         row['COLUMN_NAME'] + '\t' +
-                        str(cnt))
+                        str(cnt) + '\n')
     finally:
         connection.close()
 
@@ -85,7 +85,7 @@ def parse_args(args):
         dest='host', help='database host (default: "localhost")')
     parser.add_argument(
         '-z', '--zero-counts', action='store_true',
-        dest='zero_counts', help='include zero-counts in output')
+        dest='zero_counts', help='include counts of zero in output')
     parser.add_argument(
         'database_name', type=str, action='store', help='MySQL database name')
     parser.add_argument(
@@ -102,7 +102,7 @@ def main(args=None):
     parser = parse_args(args)
 
     if not parser.password:
-        password = getpass.getpass('Password:')
+        password = getpass.getpass('MySQL password:')
     else:
         password = parser.password
 
