@@ -7,7 +7,7 @@ CountRecordRefs
 records that refer to a database table in MySQL. The program
 outputs the number of records for each foreign key column.
 
-``CountRecordRefs`` is written in Python and should work with both
+The code is written in Python and should work with both
 Python 2 and 3.
 
 Source repository: `<https://github.com/jmenglund/CountRecordRefs>`_
