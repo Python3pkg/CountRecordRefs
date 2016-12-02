@@ -9,7 +9,7 @@ script:
 
 branches:
   except:
-  - develop
+    - develop
 
 script:
     python count_record_refs.py --help
