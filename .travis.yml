@@ -16,3 +16,6 @@ deploy:
   on:
     tags: true
     repo: jmenglund/CountRecordRefs
+
+script:
+    python count_record_refs.py --h
