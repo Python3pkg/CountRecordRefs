@@ -8,6 +8,9 @@ branches:
     only:
         - master
 
+script:
+    python count_record_refs.py --help
+
 deploy:
   provider: pypi
   user: jmenglund
@@ -17,5 +20,3 @@ deploy:
     tags: true
     repo: jmenglund/CountRecordRefs
 
-script:
-    python count_record_refs.py --h
