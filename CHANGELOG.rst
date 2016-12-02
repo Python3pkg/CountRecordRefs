@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 This project adheres to `semantic versioning <http://semver.org/>`_.
 
 
+v0.2.1 – 2016-12-01
+-------------------
+
+Changed
+~~~~~~~
+
+* Updated documentation
+
+`View commits <https://github.com/jmenglund/CountRecordRefs/compare/v0.2.0...v0.2.1>`_
+
+
 v0.2.0 – 2016-11-26
 -------------------
 
