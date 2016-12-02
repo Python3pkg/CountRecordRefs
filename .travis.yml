@@ -7,6 +7,10 @@ python:
 script:
   python count_record_refs.py --help
 
+branches:
+  except:
+  - develop
+
 deploy:
   provider: pypi
   user: jmenglund
