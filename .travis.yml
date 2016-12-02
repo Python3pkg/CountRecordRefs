@@ -1,8 +1,18 @@
+language: python
+
+python:
+  - '3.4'
+  - '3.5'
+
+script:
+  python count_record_refs.py
+
 deploy:
   provider: pypi
   user: jmenglund
   password:
     secure: bdwmSH1xdbP+cN65t7A569biHl5k//eaxCHx0mFJkgjdWi5/adVM/BqCubKyYWnwEGYBUkiIpwyZjdK2JvEZorF+FIiHd2JA3toeQG0hh7At9pm5M4tn/VCnd2hzbRdQdZn3YDMfKbeTcNKnw6CpAVrioqHOtVSR01Yprg0HQndfxyaePt2GUAhsjR0PGWrU7rkLwi09/ztJwS1v+Zn2UNkWfEni/E08y+qA/rAvfzG1pSL2o63ewn0gsvzs0zcmXHQ8Qj4X7sG3TW7GUN3pfpBXh9zPmwHMfaS7gwLU4HKNwlofTn3aGIDqE07dz9nrvSstlp3bjzBBklexpms37gEC1GvfQNGg4H6axPduQm79aYyQeNMIVYGB/B21AVHN0WR1CJPiu7ZghbUr9KWOik+pcNjIgasdQgJM+DnR8q5MgqGArIvnOWui0IWztsZMA/J/oTNtrsflYvuHeGL13XbzEKMFwpaBehYfvuZr8jXXTewX8i0zJhl/pFClDkqeoEVjGyailFCp++IOs+z6WDpHSVDfb7CYWmyTTc+DkbE3lcKVLzkHMcESLyxe8wJgGACIj0whc3Mz6BRlPuk0o01wwZitO2nAG+k0/Tt3A1Or1j2WcVZsTQZhL6o/A+TK5reAq4ZxBVyMhdmHj7tAaEXXNxcZdyGCps5vmpy2Huk=
   on:
+    branch: master
     tags: true
     repo: jmenglund/CountRecordRefs
