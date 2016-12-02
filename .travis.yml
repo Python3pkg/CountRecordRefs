@@ -11,6 +11,9 @@ branches:
   except:
   - develop
 
+script:
+    python count_record_refs.py --help
+
 deploy:
   provider: pypi
   user: jmenglund
