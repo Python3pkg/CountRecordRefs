@@ -8,7 +8,7 @@ from io import open
 
 setup(
     name='CountRecordRefs',
-    version='0.2.0',
+    version='0.2.1',
     description=(
         'Command-line utility for counting records '
         'that refer to a database table in MySQL.'),
