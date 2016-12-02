@@ -5,11 +5,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to `semantic versioning <http://semver.org/>`_.
 
 
-<<<<<<< HEAD
-v0.2.0 – 2016-12-02
-=======
-v0.2.1 – 2016-12-01
->>>>>>> master
+v0.2.1 – 2016-12-02
 -------------------
 
 Changed
