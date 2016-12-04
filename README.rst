@@ -97,7 +97,9 @@ Markus Englund, `orcid.org/0000-0003-1688-7112 <http://orcid.org/0000-0003-1688-
 
 .. |Build-Status| image:: https://travis-ci.org/jmenglund/CountRecordRefs.svg?branch=master
    :target: https://travis-ci.org/jmenglund/CountRecordRefs
+
 .. |PyPI-Status| image:: https://img.shields.io/pypi/v/CountRecordRefs.svg
    :target: https://pypi.python.org/pypi/CountRecordRefs
+
 .. |License| image:: https://img.shields.io/badge/license-GNU%20GPL%20version%203-blue.svg
    :target: https://raw.githubusercontent.com/jmenglund/CountRecordRefs/master/LICENSE.txt
