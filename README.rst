@@ -1,7 +1,7 @@
 CountRecordRefs
 ===============
 
-|License|
+|Build-Status| |PyPI-Status| |License|
 
 ``CountRecordRefs`` is a command-line tool for counting 
 related records in a MySQL database. The program outputs 
@@ -32,8 +32,15 @@ below, PyMySQL will be installed automatically for you.
 Installation
 ------------
 
+For most users, the easiest way is probably to install the latest version 
+hosted on `PyPI <https://pypi.python.org/>`_:
+
+.. code-block::
+
+    $ pip install CountRecordRefs
+
 The project is hosted at https://github.com/jmenglund/CountRecordRefs
-and can be installed using git:
+and can also be installed using git:
 
 .. code-block::
 
@@ -88,5 +95,9 @@ Author
 
 Markus Englund, `orcid.org/0000-0003-1688-7112 <http://orcid.org/0000-0003-1688-7112>`_
 
+.. |Build-Status| image:: https://travis-ci.org/jmenglund/CountRecordRefs.svg?branch=master
+   :target: https://travis-ci.org/jmenglund/CountRecordRefs
+.. |PyPI-Status| image:: https://img.shields.io/pypi/v/CountRecordRefs.svg
+   :target: https://pypi.python.org/pypi/CountRecordRefs
 .. |License| image:: https://img.shields.io/badge/license-GNU%20GPL%20version%203-blue.svg
    :target: https://raw.githubusercontent.com/jmenglund/CountRecordRefs/master/LICENSE.txt
