@@ -10,8 +10,8 @@ setup(
     name='CountRecordRefs',
     version='0.2.1',
     description=(
-        'Command-line utility for counting records '
-        'that refer to a database table in MySQL.'),
+        'Command-line utility for counting related '
+        'records in a MySQL database.'),
     long_description=open(
         join(dirname(__file__), 'README.rst'), encoding='utf-8').read(),
     py_modules=['count_record_refs'],
